@@ -1,0 +1,21 @@
+### Create Company
+POST http://localhost:8000/companies/
+Content-Type: application/json
+
+{
+  "name": "Test Company",
+  "headquarters": "Test City"
+}
+
+### Create Customer
+POST http://localhost:8000/customers/
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com",
+  "company_id": 1
+}
+
+### List Customers
+GET http://localhost:8000/customers/
